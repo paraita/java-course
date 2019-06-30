@@ -42,4 +42,9 @@ class Personne {
 	}
 	return stringResult;
     }
+    
+    /*
+    public static String getPresentationInEnglish() {
+	return "My name is " + this.getPrenom() + " " + this.getNom();
+    }*/
 }
