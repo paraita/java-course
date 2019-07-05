@@ -13,4 +13,15 @@ class Chat extends Animal {
     public void miaule() {
 	System.out.println("miaouuuu");
     }
+
+    public String getDescription() {
+	return "{Chat:: estVivant: " + this.getEstVivant() +
+	    ", age: " + this.getAge() + ", regime: " + this.getRegime() +
+	    ", sexe: " + this.getSexe() + ", vitesseAttaque: " +
+	    this.getVitesseAttaque() + "}";
+    }
+
+    public String getAncetreDescription() {
+	return super.getDescription();
+    }
 }

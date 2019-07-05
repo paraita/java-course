@@ -60,7 +60,7 @@ class Animal {
     }
 
     public String getDescription() {
-	return "{Chat:: estVivant: " + this.estVivant +
+	return "{Animal:: estVivant: " + this.estVivant +
 	    ", age: " + this.age + ", regime: " + this.regime +
 	    ", sexe: " + this.sexe + ", vitesseAttaque: " +
 	    this.vitesseAttaque + "}";
