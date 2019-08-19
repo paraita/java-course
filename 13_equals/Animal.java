@@ -71,7 +71,6 @@ class Animal {
 	return this.getDescription();
     }
 
-    
     @Override
     public boolean equals(Object o) {
 	Animal a = (Animal) o;
@@ -80,6 +79,5 @@ class Animal {
 	boolean memeSexe = a.getSexe() == this.getSexe();
 	return memeClasse && memeAge && memeSexe;
     }
-    
     
 }
