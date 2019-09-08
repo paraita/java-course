@@ -1,9 +1,10 @@
-class Chien extends Animal implements Joueur, Comparable {
+class Chien extends Animal implements Joueur, Amical {
 
-    private int taille; // en cm
+    private String nom;
 
-    Chien(int taille) {
-	this.taille = taille;
+    Chien(String nom) {
+	super();
+	this.nom = nom;
     }
     
     public void donnesLaPatte() {
@@ -14,20 +15,20 @@ class Chien extends Animal implements Joueur, Comparable {
 	System.out.println("va chercher le baton");
     }
 
-    public int getTaille() {
-	return taille;
+    public String getNom() {
+	return this.nom;
     }
 
-    public boolean estPlusGrandQue(Comparable comparable) {
-	return taille > comparable.getTaille();
+    public void jouesAvec(Amical amical) {
+	System.out.println("* " + this.getNom() + " joue avec " + amical.getNom() + " *");
     }
 
-    public boolean estPlusVieuxQue(Comparable comparable) {
-	return age > comparable.getAge();
+    public boolean renifles(Animal animal) {
+	return animal instanceof Amical;
     }
 
     @Override
     public String getDescription() {
-	return "[Chien: taille=" + taille + "]";
+	return "[Chien: nom=" + nom + "]";
     }
 }
