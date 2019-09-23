@@ -1,11 +1,10 @@
-class Exemple20 {
+class Exemple21 {
       
     public static void main(String[] args) {
 
 	Chien cali = new Chien("Cali");
-	Chien swan = new Chien("Swan");
-	cali.promenesToiAvec(swan);	
+	Chat garfield = new Chat("Garfield");
+	cali.promenesToiAvec(garfield);
 	
     }
-    
 }     

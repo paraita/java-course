@@ -1,4 +1,4 @@
-class Chat extends Animal implements Amical {
+class Chat extends Animal {
 
     private String nom;
 
